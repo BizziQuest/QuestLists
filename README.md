@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# QuestLists
+Multi-State List Management and API for keeping track of progress in Life - real or virtual.
+>>>>>>> master
