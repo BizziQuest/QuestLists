@@ -6,13 +6,18 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.2.2",
+    "sass": "^1.24.4",
+    "sass-loader": "^8.0.1",
     "turbolinks": "^5.2.0",
     "vue": "^2.6.11",
     "vue-loader": "^15.8.3",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuetify": "^2.2.3"
   },
   "version": "0.1.0",
   "devDependencies": {
+    "deepmerge": "^4.2.2",
+    "fibers": "^4.0.2",
     "webpack-dev-server": "^3.10.1"
   }
 }
