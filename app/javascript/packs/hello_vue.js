@@ -5,24 +5,36 @@
 // like app/views/layouts/application.html.erb.
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
 
-import Vue from 'vue'
-import App from '../app.vue'
-import vuetify from './vuetify'
+// import Vue from 'vue'
+// import App from '../app.vue'
+// import vuetify from './vuetify'
 
-// export default new Vuetify({ })
-Vue.use(vuetify)
-document.addEventListener('DOMContentLoaded', () => {
-  
-  const app = new Vue({
-    vuetify,
-    vuetify: new Vuetify(),
+// // export default new Vuetify({ })
+// Vue.use(vuetify)
+// document.addEventListener('DOMContentLoaded', () => {
+//   // NOTE:   { vuetify } === { vuetify: vuetify }
+//   const app = new Vue({
+//     el: '#app',
+//     vuetify: new Vuetify(),
+//     render: h => h(App)
+//   }).$mount()
+//   document.body.appendChild(app.$el)
+
+//   console.log(app)
+// })
+
+// src/main.js
+
+import Vue from 'vue'
+// import vuetify from '@/plugins/vuetify' // path to vuetify export
+import App from '../app.vue'
+
+const app = new Vue({
+   el: '#app',
+  //  vuetify: new Vuetify(),
     render: h => h(App)
   }).$mount()
-  document.body.appendChild(app.$el)
-
-  console.log(app)
-})
-
+  // document.body.appendChild(app.$el)
 
 // The above code uses Vue without the compiler, which means you cannot
 // use Vue to target elements in your existing html templates. You would
