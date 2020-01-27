@@ -1,0 +1,31 @@
+default: &default
+  package_manager: yarn
+  public_output_path: vue_assets
+  # js_output:
+  #   filename: 'js/[name].[hash:8].js'
+  #   chunkFilename: 'js/[name].[hash:8].js'
+  alias:
+    '@': app/assets/vue
+    # '~': app/assets/vue/components
+
+development:
+  <<: *default
+  # manifest_output: tmp/manifest.json
+  devServer:
+    contentBase: public
+    host: localhost
+    port: 3080
+    compress: true
+
+production:
+  <<: *default
+  manifest_output: app/assets/vue/manifest.json
+  productionSourceMap: false
+  css:
+    extract: true
+  modern: true
+
+test:
+  <<: *default
+  # launch_dev_service: vue-cli-service serve
+  # filenameHashing: false
