@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>QuestLists</title>
+    <title>Rvv</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <link href = "https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel = "stylesheet">
+    <link href = 'https: //fonts.googleapis.com/css? family = Roboto: 300,400,500,700 | Material + Icons' rel = "stylesheet">
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <%= yield %>
+    <%= javascript_pack_tag 'hello_vue'%>
   </body>
 </html>
